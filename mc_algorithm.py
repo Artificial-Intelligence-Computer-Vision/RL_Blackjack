@@ -1,6 +1,6 @@
 from header_import import *
 
-class BlackJack_Monte_Carlo_Methods(object):
+class BlackJack_First_Visit_MC_Prediction_Value(object):
     def __init__(self, number_of_episode, epsilon = 0.1, gamma = 1):
         self.number_of_episode = number_of_episode
         self.gamma = gamma
@@ -54,7 +54,7 @@ class BlackJack_Monte_Carlo_Methods(object):
 
 
 
-class BlackJack_Monte_Carlo_Methods(object):
+class BlackJack_MC_Prediction_Value_With_Exploring(object):
     def __init__(self, number_of_episode, epsilon = 0.1, gamma = 1):
         self.number_of_episode = number_of_episode
         self.gamma = gamma
@@ -110,13 +110,13 @@ class BlackJack_Monte_Carlo_Methods(object):
 
 
 
-class BlackJack_Monte_Carlo_Methods(object):
+class BlackJack_MC_Prediction_Value_With_Importance_Sampling(object):
     def __init__(self, number_of_episode, epsilon = 0.1, gamma = 1):
         self.number_of_episode = number_of_episode
         self.gamma = gamma
         self.epsilon = epsilon
         self.episode = []
-        self.number_of_state = 20
+        self.number_of_state = 2
         self.behavior_policy = 0.5
         self.state_sum = defaultdict(int)
         self.state_count = defaultdict(float)
